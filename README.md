@@ -52,3 +52,7 @@ To create a version or commit all changes
 ```
 git commit -m "message"
 ```
+To check origin or project url
+```
+git remote -v
+``
