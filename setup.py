@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 def get_requirements() -> List[str]:
@@ -19,7 +19,7 @@ setup(
     author_email= "victoropeyemi97@outlook.com",
     long_description= "The program is intended to solve house price prediction",
     url="https://github.com/omolevictor97/machine_learning_project",
-    packages=["housing"],
+    packages=find_packages(),
     license= "Apache License",
     install_requires = get_requirements()
 )
