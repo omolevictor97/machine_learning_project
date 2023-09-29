@@ -4,9 +4,9 @@ import os
 
 LOG_DIR = "housing_logs" # Directory name
 
-CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y-%m-%d_%H-M-S')}" # A current time tracking
+CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y-%m-%d_%H-M-S')}" # A current time tracking to track the current time of errors
 
-LOG_FILE_NAME = f"log_{CURRENT_TIME_STAMP}.log" # We create a file for each log
+LOG_FILE_NAME = f"log_{CURRENT_TIME_STAMP}.log" # We create a file for each log, the format of the log files
 
 # We make the log directory or folder
 os.makedirs(LOG_DIR, exist_ok=True)

@@ -33,7 +33,7 @@ class HousingException(Exception):
     
 
     def __str__(self):
-        return self.get_detailed_error_message()
+        return self.get_detailed_error_message() #For display in print statement
     
     def __repr__(self) -> str:
-        return HousingException.__name__.str()
+        return HousingException.__name__.str() # Displays when the class object is called

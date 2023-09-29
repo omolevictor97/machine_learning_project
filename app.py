@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     try:
         log.info("We are testing logger package")
-        raise Exception("We are testing custom exception")
+        return "Hi, welcome machine learning engineers!!!"
     except Exception as e:
         log.info("Error has occured at the index function of app.py")
         housing = HousingException(e, sys)
